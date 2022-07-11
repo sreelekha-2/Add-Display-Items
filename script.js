@@ -8,16 +8,11 @@ let displayBtn = document.getElementById('displayBtn');
 
 let listContainer = document.getElementById('list');
 
-let inputVal;
-
 let arr = [];
-userInput.onchange = function (e) {
-  inputVal = e.target.value;
-};
 
 addBtn.onclick = function () {
-  arr.push(inputVal);
-  alert(`item added at index:${arr.indexOf(inputVal)}`);
+  arr.push(userInput.value);
+  alert(`item added at index:${arr.indexOf(userInput.value)}`);
   userInput.value = '';
 };
 
